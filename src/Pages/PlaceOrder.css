@@ -1,0 +1,145 @@
+.place-order-page {
+  min-height: 80vh;
+  padding: 50px 20px;
+  background: #f7f9fc;
+}
+
+.place-order-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+}
+
+.student-details,
+.order-summary {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.student-details h1 {
+  margin-bottom: 8px;
+}
+
+.order-subtitle {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.student-details input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+.student-details input:focus {
+  border-color: #4f46e5;
+}
+
+.two-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.order-summary h2 {
+  margin-bottom: 25px;
+}
+
+.order-course {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.order-course img {
+  width: 90px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.order-course h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.order-course p {
+  margin: 0;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 21px;
+}
+
+.summary-total strong {
+  color: #4f46e5;
+}
+
+.payment-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.payment-button:hover {
+  background: #3730a3;
+}
+
+.payment-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.payment-note {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+  .place-order-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .two-inputs {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .student-details,
+  .order-summary {
+    padding: 20px;
+  }
+}
